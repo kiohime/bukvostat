@@ -35,6 +35,7 @@ func check(e error) {
 	}
 }
 
+//
 // получает текст в строке, считает сколько всего символов
 func skolkoBukv(text string) {
 	// пихает все руны символов в массив
@@ -45,7 +46,6 @@ func skolkoBukv(text string) {
 	// fmt.Println("текст")
 	// fmt.Printf("\"%v\"\n\n", text)
 	fmt.Printf("имеет\n%v символов\n\n", dlinaText)
-	fmt.Printf("из них\n")
 }
 
 // считает количество повторов буквы в стринге, bukvaNow это подсчитывающаяся буква, а poiskSchet - число повторов буквы
@@ -61,6 +61,8 @@ func sorter() {
 
 // выводит текст, используя данные буковок-структур массива bukvyVnalichii, k - означает общее количество повторений всех букв в массиве
 func printer(k int) {
+	fmt.Printf("было найдено\n")
+	fmt.Printf("%v букв алфавита\n\n", len(bukvyVnalichii))
 	// пока не кончатся буквы-структуры массива bukvyVnalichii
 	for _, bukAr := range bukvyVnalichii {
 		// пора считать процентное соотношение каждой буквы относительно остальных
